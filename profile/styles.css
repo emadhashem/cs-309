@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0 , .3);
+}
+.profile__container {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.profile__container > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.info__container {
+    width: 70%;
+    margin: auto;
+    margin-top: 25px;
+}
+.name,
+.email {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.bio {
+    color: rgb(63, 58, 58);
+}
