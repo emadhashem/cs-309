@@ -1,39 +1,79 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0 , .3);
 }
-.profile__container {
-    width: 100%;
-    min-height: 90vh;
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding-top: 15px;
-}
-
-.profile__container > img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    flex-direction: column;
     
 }
 
-.info__container {
-    width: 70%;
-    margin: auto;
-    margin-top: 25px;
+.assignment__1 {
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+
 }
-.name,
-.email {
-    font-size: large;
-    font-weight: bold;
-    text-align: center;
+.curimg__ {
+    width: 100%;
+    height: 50%;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.bio {
-    color: rgb(63, 58, 58);
-    text-align: center;
+
+.imgscontainer__ {
+    width: 100%;
+    height: 48%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.imgscontainer__ > img {
+    width: 100px;
+    height: 200px;
+    object-fit : contain;
+
+}
+.assignment__2 {
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgscontainer__alt {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgscontainer__alt > div {
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+    
+}
+
+.imgscontainer__alt > div > img {
+    width: 100px;
+    height: 200px;
+    object-fit : contain;
 }

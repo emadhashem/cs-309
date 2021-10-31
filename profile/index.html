@@ -3,32 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel = "stylesheet" >
-    <title>Profile</title>
+    <meta name="viewport" content="width=device-width">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <div class="profile__container">
-        <img alt="User Img" src="./imgs/noprofile.webp" />
-        <div class="info__container">
-            <p class="name">
-                User Name
-            </p>
-            <p class="email">
-                UserName@email.com
-            </p>
-            <p class="bio">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus provident aliquam!
-                Corporis, ipsum neque. Aperiam est corrupti animi eum culpa odio minus, eligendi eos repudiandae nisi
-                rerum voluptates perferendis!
-                Rem eveniet nobis at hic? Magni, quisquam. Saepe commodi nesciunt illum voluptatem ullam itaque placeat
-                eius, minima, alias deserunt repudiandae, eos animi exercitationem nulla quia. Reiciendis rerum nesciunt
-                laborum vel.
+
+    <div class="assignment__1">
+        <div class="curimg__" id="curImg">
+            <p>
+                Hover over an image below to display here.
             </p>
         </div>
+
+        <div class="imgscontainer__">
+            <img id="preview0" alt="Styling with a Bandana"
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover="upDate(this)">
+
+            <img id="preview1" alt="With My Boy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG">
+
+            <img id="preview2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt="Young Puppy">
+        </div>
     </div>
+
+    <div class="assignment__2">
+        <div class="curimg__" id="curAlt">
+            <p>
+                Hover over an image below to display here.
+            </p>
+        </div>
+
+        <div class="imgscontainer__alt">
+            
+            <div id = "preview0_alt__container">
+                <p id = "alt__0"></p>
+                <img id="preview0_alt" alt="Styling with a Bandana"
+                    src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover="upDate(this)">
+
+            </div>
+            <div id = "preview1_alt__container">
+                <p id = "alt__1"></p>
+                <img id="preview1_alt" alt="With My Boy"
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG">
+
+            </div>
+            <div id = "preview2_alt__container">
+                <p id = "alt__2"></p>
+                <img id="preview2_alt" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg"
+                alt="Young Puppy">
+            </div>
+        </div>
+    </div>
+    <script src="controller.js"></script>
 </body>
 
 </html>
